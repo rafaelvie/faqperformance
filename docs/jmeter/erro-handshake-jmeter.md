@@ -20,6 +20,6 @@ Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao 
 
 - Incluir na última linha do arquivo a seguinte expressão:
 
-```txt
+```
 jsse.enableSNIExtension=false
 ```

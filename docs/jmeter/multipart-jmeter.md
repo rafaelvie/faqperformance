@@ -20,7 +20,7 @@ Para casos em que é preciso trabalhar com envio de múltiplos arquivos em cada 
 
 ![](https://github.com/rafaelvie/faqperformance/blob/main/img/multipart-2.png)
 
-```txt
+```
 Para uma lista com todos os MIME types existentes, clique [aqui](https://www.hostmysite.com/support/dedicated/iis/mimetypes)
 ```
 
