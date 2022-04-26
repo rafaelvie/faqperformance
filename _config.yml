@@ -7,3 +7,19 @@ url: "https://rafaelvie.github.io"
 
 # Tema remoto para a página.
 remote_theme: just-the-docs/just-the-docs
+
+# Habilitar ou desabilitar âncoras de cabeçalho 
+heading_anchors: true
+
+# Faz os links Aux abrirem em uma nova aba. O padrão é falso 
+aux_links_new_tab: false
+
+# Ordem de classificação para links de navegação 
+# nav_sort: case_insensitive # padrão, equivalente a nil 
+nav_sort: case_sensitive # Letras maiúsculas classificadas antes das minúsculas 
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Voltar ao topo"
+
+footer_content: "Copyright &copy; 2022 Equipe de Desempenho e Performance. Desenvolvido para <a href=\"https://caixa.gov.br\">Caixa Econômica Federal.</a>"
