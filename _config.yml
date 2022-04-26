@@ -12,7 +12,7 @@ remote_theme: just-the-docs/just-the-docs
 heading_anchors: true
 
 # Faz os links Aux abrirem em uma nova aba. O padrão é falso 
-aux_links_new_tab: false
+aux_links_new_tab: true
 
 # Ordem de classificação para links de navegação 
 # nav_sort: case_insensitive # padrão, equivalente a nil 
