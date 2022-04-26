@@ -6,7 +6,8 @@ nav_order: 1
 has_toc: false
 ---
 
-# Erro de handshake em gravação HTTPS no JMeter {: .fs-9 }
+# Erro de handshake em gravação HTTPS no JMeter 
+{: .fs-9 }
 
 Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao se comunicar com o JMeter. Constatamos que a situação acontece também com a execução do teste.
 {: .fs-6 .fw-300 }
