@@ -1,12 +1,12 @@
 ---
 layout: default
-title: Erro de handshake em gravação HTTPS no JMeter
+title: Erro de handshake em gravação e execução HTTPS no JMeter
 parent: JMeter
 nav_order: 1
 has_toc: false
 ---
 
-# Erro de handshake em gravação HTTPS no JMeter 
+# Erro de handshake em gravação e execução HTTPS no JMeter 
 {: .fs-9 }
 
 Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao se comunicar com o JMeter. Constatamos que a situação acontece também com a execução do teste.
@@ -16,7 +16,7 @@ Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao 
 
 - Acessar o arquivo system.properties, localizado na pasta bin do JMeter.
 
-![](https://prnt.sc/wjqxu_kD5Vhj)
+![jtd](https://prnt.sc/wjqxu_kD5Vhj)
 
 - Incluir na última linha do arquivo a seguinte expressão:
 
