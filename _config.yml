@@ -1,6 +1,9 @@
+# Configurações gerais da página.
+# Nas tag abaixo, poderá ser configurado o título do site, uma descrição para SEO, sudpasta do site e URL principal.
 title: Wiki Performance
 description: Repositório de documentação para a equipe de Performance da Caixa.
-baseurl: "/faqperformance" # the subpath of your site, e.g. /blog
-url: "https://rafaelvie.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/faqperformance"
+url: "https://rafaelvie.github.io"
 
+# Tema remoto para a página.
 remote_theme: just-the-docs/just-the-docs
