@@ -22,4 +22,19 @@ nav_sort: case_sensitive # Letras maiúsculas classificadas antes das minúscula
 back_to_top: true
 back_to_top_text: "Voltar ao topo"
 
-footer_content: "Copyright &copy; 2022 Equipe de Desempenho e Performance. Desenvolvido para <a href=\"https://caixa.gov.br\">Caixa Econômica Federal.</a>"
+footer_content: "Copyright &copy; 2022 Equipe de Desempenho e Performance. Desenvolvido pela **GECEQ** para <a href=\"https://caixa.gov.br\">Caixa Econômica Federal.</a>"
+
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+  # ignore:
+  #   envs: all
