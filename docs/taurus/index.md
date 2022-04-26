@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Home
+title: Taurus
 nav_order: 4
 has_children: true
 ---
 
 # Taurus
-
 {: .fs-9 }
 
 Nesta seção você encontrará informações e tutoriais de como integrar a execução de scripts criados no **JMeter** com o **Taurus**.
