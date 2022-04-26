@@ -8,54 +8,54 @@ url: "https://rafaelvie.github.io"
 # Tema remoto para a página.
 remote_theme: just-the-docs/just-the-docs
 
-# Habilitar ou desabilitar âncoras de cabeçalho 
+# Habilitar ou desabilitar âncoras de cabeçalho
 heading_anchors: true
 
-# Faz os links Aux abrirem em uma nova aba. O padrão é falso 
+# Faz os links Aux abrirem em uma nova aba. O padrão é falso
 aux_links_new_tab: true
 
-# Ordem de classificação para links de navegação 
-# nav_sort: case_insensitive # padrão, equivalente a nil 
-nav_sort: case_sensitive # Letras maiúsculas classificadas antes das minúsculas 
+# Ordem de classificação para links de navegação
+# nav_sort: case_insensitive # padrão, equivalente a nil
+nav_sort: case_sensitive # Letras maiúsculas classificadas antes das minúsculas
 
 # Link Voltar ao topo
 back_to_top: true
 back_to_top_text: "Voltar ao topo"
 
-footer_content: "Copyright &copy; 2022 Equipe de Desempenho e Performance. Desenvolvido pela <strong>GECEQ</strong> para <a href=\"https://caixa.gov.br\">Caixa Econômica Federal.</a>"
+footer_content: 'Copyright &copy; 2022 Equipe de Desempenho e Performance. Desenvolvido pela <strong>GECEQ</strong> para <a href="https://caixa.gov.br">Caixa Econômica Federal.</a>'
 
 kramdown:
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
+    syntax_highlighter_opts:
+        block:
+            line_numbers: false
 
 compress_html:
-  clippings: all
-  comments: all
-  endings: all
-  startings: []
-  blanklines: false
-  profile: false
-  # ignore:
-  #   envs: all
+    clippings: all
+    comments: all
+    endings: all
+    startings: []
+    blanklines: false
+    profile: false
+    # ignore:
+    #   envs: all
 
 # Define Jekyll collections
 collections:
-  # Define a collection named "docs", its documents reside in the "_docs" directory
-  docs:
-    permalink: "/:collection/:path/"
-    output: true
+    # Define a collection named "docs", its documents reside in the "_docs" directory
+    docs:
+        permalink: "/docs/_docs/"
+        output: true
 
 just_the_docs:
-  # Define which collections are used in just-the-docs
-  collections:
-    # Reference the "docs" collection
-    docs:
-      # Give the collection a name
-      name: Documentation
-      # Exclude the collection from the navigation
-      # Supports true or false (default)
-      nav_exclude: false
-      # Exclude the collection from the search
-      # Supports true or false (default)
-      search_exclude: false
+    # Define which collections are used in just-the-docs
+    collections:
+        # Reference the "docs" collection
+        docs:
+            # Give the collection a name
+            name: Documentation
+            # Exclude the collection from the navigation
+            # Supports true or false (default)
+            nav_exclude: false
+            # Exclude the collection from the search
+            # Supports true or false (default)
+            search_exclude: false
