@@ -6,7 +6,6 @@ has_children: true
 ---
 
 # JMeter
-
 {: .fs-9 }
 
 Nesta seção você encontrará documentações e tutoriais referentes a dificuldades que podem surgir na criação de scripts pelo **JMeter**.
