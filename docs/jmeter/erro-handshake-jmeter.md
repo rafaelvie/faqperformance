@@ -1,13 +1,25 @@
 ---
 layout: default
-title: teste 1
+title: Erro de handshake durante gravação e execução de cenário HTTP(S) no JMeter
 parent: JMeter
 nav_order: 1
 has_toc: false
 ---
 
-# teste 1
+# Erro de handshake durante gravação e execução de cenário HTTP(S) no JMeter
 {: .fs-9 }
 
-Nesta seção você encontrará documentações e tutoriais referentes a dificuldades que podem surgir na criação de scripts pelo **JMeter**.
+Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao se comunicar com o JMeter. Constatamos que a situação acontece também com a execução do teste.
 {: .fs-6 .fw-300 }
+
+---
+
+1. Acessar o arquivo system.properties, localizado na pasta bin do JMeter.
+
+!(img/handshake.png)
+
+2. Incluir na última linha do arquivo a seguinte expressão:
+
+´´´
+jsse.enableSNIExtension=false
+´´´
