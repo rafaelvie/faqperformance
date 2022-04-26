@@ -43,7 +43,7 @@ compress_html:
 collections:
     # Define a collection named "docs", its documents reside in the "_docs" directory
     docs:
-        permalink: "/:docs/:_docs/"
+        permalink: "/docs/_docs/jmeter"
         output: true
 
 just_the_docs:
@@ -52,7 +52,7 @@ just_the_docs:
         # Reference the "docs" collection
         docs:
             # Give the collection a name
-            name: Documentation
+            name: JMeter
             # Exclude the collection from the navigation
             # Supports true or false (default)
             nav_exclude: false
