@@ -18,7 +18,7 @@ aux_links_new_tab: false
 # nav_sort: case_insensitive # padrão, equivalente a nil 
 nav_sort: case_sensitive # Letras maiúsculas classificadas antes das minúsculas 
 
-# Back to top link
+# Link Voltar ao topo
 back_to_top: true
 back_to_top_text: "Voltar ao topo"
 
