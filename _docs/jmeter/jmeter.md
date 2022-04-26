@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Home
+title: JMeter
 nav_order: 1
-permalink: /
+has_children: true
 ---
 
 # Objetivo
