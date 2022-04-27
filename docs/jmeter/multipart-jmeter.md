@@ -22,7 +22,7 @@ Para casos em que é preciso trabalhar com envio de múltiplos arquivos em cada 
 
 ![](https://github.com/rafaelvie/faqperformance/blob/main/img/multipart-2.png?raw=true)
 
-**>** _Para uma lista com todos os MIME types existentes, clique [aqui](https://www.hostmysite.com/support/dedicated/iis/mimetypes)_
+- _Para uma lista com todos os MIME types existentes, clique [aqui](https://www.hostmysite.com/support/dedicated/iis/mimetypes)_
 
 3) Caso a requisição não funcione, mesmo com a inserção dos parâmetros de forma correta como exemplificado até aqui, clique na aba **Advanced** e no item **Implementação**, selecione **Java**. A resposta da requisição deverá funcionar corretamente.
 
