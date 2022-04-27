@@ -14,11 +14,11 @@ Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao 
 
 ---
 
-- Acessar o arquivo system.properties, localizado na pasta bin do JMeter.
+1 Acessar o arquivo system.properties, localizado na pasta bin do JMeter.
 
 ![](https://github.com/rafaelvie/faqperformance/blob/main/img/handshake.png)
 
-- Incluir na última linha do arquivo a seguinte expressão:
+2 Incluir na última linha do arquivo a seguinte expressão:
 
 ```
 jsse.enableSNIExtension=false
