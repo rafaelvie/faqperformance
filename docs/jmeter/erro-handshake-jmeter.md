@@ -14,7 +14,7 @@ Para casos específicos em que o sistema a ser gravado apresente erro de SSL ao 
 
 ---
 
-1 - Acessar o arquivo system.properties, localizado na pasta bin do JMeter.
+1 - Acessar o arquivo _system.properties_, localizado na pasta _bin_ do JMeter.
 
 ![](https://github.com/rafaelvie/faqperformance/blob/main/img/handshake.png)
 
