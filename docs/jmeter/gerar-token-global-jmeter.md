@@ -30,8 +30,8 @@ String token = bsh.args[0];
 ${__setProperty(globaltoken,${token})}
 ```
 
-#### Obs.: Este código está definindo a variável token como global através de propriedade do JMeter.
-
+_Obs.: Este código está definindo a variável token como global através de propriedade do JMeter._
+{: .fs-4 }
 
 2) Adicionar no "HTTP Header Manager" a variável como "global":
 
