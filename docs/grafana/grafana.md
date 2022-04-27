@@ -8,5 +8,5 @@ has_children: true
 # Grafana
 {: .fs-9 }
 
-Nesta seção você encontrará informações referentes ao uso do **Grafana**.
+Nesta seção você encontrará informações referentes a utilização do **Grafana**.
 {: .fs-6 .fw-300 }
