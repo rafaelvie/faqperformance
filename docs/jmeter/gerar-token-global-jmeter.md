@@ -32,6 +32,7 @@ ${__setProperty(globaltoken,${token})}
 
 #### Obs.: Este código está definindo a variável token como global através de propriedade do JMeter.
 
+
 2) Adicionar no "HTTP Header Manager" a variável como "global":
 
 | Nome             | Valor                        |
