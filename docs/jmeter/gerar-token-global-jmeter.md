@@ -14,7 +14,7 @@ Utilizado para trabalhar com token do SSO (SISET) com mais de um Thread Group.
 
 ---
 
-1) Criar na requisição do Token do primeiro THREAD GROUP:
+1) Criar na requisição do Token do primeiro Thread Group:
 
 - Criar um extrator de JSON;
 
@@ -30,7 +30,9 @@ String token = bsh.args[0];
 ${__setProperty(globaltoken,${token})}
 ```
 
+
 **Obs.: Este código está definindo a variável token como global através de propriedade do JMeter.**
+
 
 2) Adicionar no "HTTP Header Manager" a variável como "global":
 
