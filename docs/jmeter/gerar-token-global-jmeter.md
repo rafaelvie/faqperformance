@@ -1,13 +1,39 @@
 ---
 layout: default
-title: teste 3
+title: Gerar Token Global
 parent: JMeter
 nav_order: 3
 has_toc: false
 ---
 
-# teste 3
+# Gerar Token Global
 {: .fs-9 }
 
-Nesta seção você encontrará documentações e tutoriais referentes a dificuldades que podem surgir na criação de scripts pelo **JMeter**.
+Utilizado para trabalhar com token do SSO (SISET) com mais de um Thread Group.
 {: .fs-6 .fw-300 }
+
+---
+
+1) Criar na requisição do Token do primeiro THREAD GROUP:
+
+- Criar um extrator de JSON;
+
+```
+Valor da expressão: $.access_token
+```
+
+- Criar um BeanShell PostProcessor com o código abaixo:
+
+```
+String token = bsh.args[0];
+
+${__setProperty(globaltoken,${token})}
+```
+
+**Obs.: Este código está definindo a variável token como global através de propriedade do JMeter.**
+
+2) Adicionar no "HTTP Header Manager" a variável como "global":
+
+| Nome             | Valor                      |
+|:-----------------|:---------------------------|
+| _Authorization_  | Bearer ${__P(globaltoken)} |
