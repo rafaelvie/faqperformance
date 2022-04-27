@@ -12,6 +12,8 @@ has_toc: false
 Para casos em que é preciso trabalhar com envio de múltiplos arquivos em cada endpoint, como uma cadeia de certificados, por exemplo.
 {: .fs-6 .fw-300 }
 
+---
+
 1) Na requisição HTTP criada, após configurar os parâmetros conforme documentação do sistema ou _collection_, marque a caixa de seleção **Usar multipart/form-data para HTTP Post**. Em seguida, adicionar todos os parâmetros conforme documentação da API testada. Para o **Content-Type**, deixar todos como **text/plain**.
 
 ![](https://github.com/rafaelvie/faqperformance/blob/main/img/multipart-1.png)
