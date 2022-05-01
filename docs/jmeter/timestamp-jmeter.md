@@ -18,7 +18,7 @@ nav_order: 4
 
 A geração do **timestamp atual** é um requisito comum em testes de desempenho. Ou você precisa passar o timestamp atual no formato de **época** ou no formato **ISO**. O **JMeter** possui algumas funções relacionadas ao tempo na biblioteca de funções que atendem ao requisito de gerar o timestamp atual, passado ou futuro usando deslocamentos.
 
-## Função `<__time()>` no JMeter
+## Função `<__time()>`
 
 Esta função é usada para gerar o timestamp atual em diferentes formatos, possuindo dois argumentos, ou seja, formato de hora e nome da variável e ambos são opcionais. A função `<__time()>` sem nenhum argumento retorna a hora atual no formato de época.
 
@@ -63,7 +63,7 @@ Caso você queira salvar o valor em uma variável, adicione um nome de variável
 
 Use a variável `<${cTime}>` onde queira inserir o valor gerado.
 
-## Função `<__timeShift()>` no JMeter
+## Função `<__timeShift()>`
 
 A função `<__timeShift()>` é usada para gerar a data passada ou futura durante o teste de desempenho. Possui cinco argumentos de entrada, entre eles 2 são opcionais.
 
