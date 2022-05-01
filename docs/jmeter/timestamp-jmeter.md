@@ -83,7 +83,7 @@ A função `<__timeShift()>` é usada para gerar a data passada ou futura durant
 
 ![Figura 1: Função timeShift no JMeter](https://github.com/rafaelvie/faqperformance/blob/main/img/multipart-2.png?raw=true)
 
-- **Exemplos**:
+**Exemplos**:
    - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,P2D,,)}>` gerará uma data futura adicionando 2 dias no dia atual;
    - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2H,,)}>` gerará um horário futuro adicionando 2 horas no horário atual;
    - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2M,,)}>` gerará um horário futuro adicionando 2 minutos no horário atual;
