@@ -27,8 +27,8 @@ Esta função é usada para gerar o timestamp atual em diferentes formatos, poss
 | `${__time()}` | 1603188484750 | Hora atual no formato de época em milissegundos |
 | `${__time(/1000)}` | 1603188484 | Hora atual no formato de época em segundos |
 | `${__time(yyyy)}` | 2020 | Ano atual |
-| `${__time(MM)}` | 10| Mês atual em 2 dígitos |
-| `${__time(MMM)}` | Out | Hora atual no formato de época em milissegundos |
+| `${__time(MM)}` | 10 | Mês atual em 2 dígitos |
+| `${__time(MMM)}` | Out | Mês atual em 3 dígitos |
 | `${__time(MMMM)}` | Outubro | Nome completo do mês atual |
 | `${__time(d)} / ${__time(dd)}` | 1 / 01 **ou** 21 / 21 | Dia atual em um ou dois dígitos |
 | `${__time(h)} / ${__time(hh)}` | 1 / 01 **ou** 11 / 23 | Hora atual em um ou dois dígitos no formato de 12 horas (1-12) |
@@ -52,13 +52,13 @@ Esta função é usada para gerar o timestamp atual em diferentes formatos, poss
 Se você quiser inserir o timestamp atual (no formato de época) na solicitação, então você pode usar diretamente `<${__time()}>`, ou então você pode usar o argumento mencionado acima e gerar o valor no formato de hora desejado.
 
 ```js
-Exemplo: ${__time(yyyy-MM-dd-HH:mm:ss:SSS a XXX)} vai gerar 2020-10-21-11:16:38:966 AM +05:30
+Exemplo: ${__time(yyyy-MM-dd-HH:mm:ss:SSS a XXX)} gerará 2020-10-21-11:16:38:966 AM +05:30
 ```
 
 Caso você queira salvar o valor em uma variável, adicione um nome de variável ao lado do formato separado por uma vírgula.
 
 ```js
-{__time(yy-MM-dd-HH:mm:ss:SSS, cTime)}
+{__time(yy-MM-dd-HH:mm:ss:SSS, cTime)}	
 ```
 
 Use a variável `<${cTime}>` onde queira inserir o valor gerado.
