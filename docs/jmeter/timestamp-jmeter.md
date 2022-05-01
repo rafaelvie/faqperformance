@@ -18,13 +18,13 @@ nav_order: 4
 
 A geração do **timestamp atual** é um requisito comum em testes de desempenho. Ou você precisa passar o timestamp atual no formato de **época** ou no formato **ISO**. O **JMeter** possui algumas funções relacionadas ao tempo na biblioteca de funções que atendem ao requisito de gerar o timestamp atual, passado ou futuro usando deslocamentos.
 
-## Função <__time()> no JMeter
+## Função `<__time()>` no JMeter
 
-Esta função é usada para gerar o timestamp atual em diferentes formatos, possuindo dois argumentos, ou seja, formato de hora e nome da variável e ambos são opcionais. A função <__time()> sem nenhum argumento retorna a hora atual no formato de época.
+Esta função é usada para gerar o timestamp atual em diferentes formatos, possuindo dois argumentos, ou seja, formato de hora e nome da variável e ambos são opcionais. A função `<__time()>` sem nenhum argumento retorna a hora atual no formato de época.
 
 | Função | Exemplo | Descrição |
 |:-------|:--------|:----------|
-| `${__time()}>` | 1603188484750 | Hora atual no formato de época em milissegundos |
+| `${__time()}` | 1603188484750 | Hora atual no formato de época em milissegundos |
 | `${__time(/1000)}` | 1603188484 | Hora atual no formato de época em segundos |
 | `${__time(yyyy)}` | 2020 | Ano atual |
 | `${__time(MM)}` | 10| Mês atual em 2 dígitos |
@@ -49,7 +49,7 @@ Esta função é usada para gerar o timestamp atual em diferentes formatos, poss
 | `${__time(w)}` | 43 | Semana em um ano |
 | `${__time(G)}` | AD | Era atual |
 
-Se você quiser inserir o timestamp atual (no formato de época) na solicitação, então você pode usar diretamente <${__time()}>, ou então você pode usar o argumento mencionado acima e gerar o valor no formato de hora desejado.
+Se você quiser inserir o timestamp atual (no formato de época) na solicitação, então você pode usar diretamente `<${__time()}>`, ou então você pode usar o argumento mencionado acima e gerar o valor no formato de hora desejado.
 
 ```js
 Exemplo: ${__time(yyyy-MM-dd-HH:mm:ss:SSS a XXX)} vai gerar 2020-10-21-11:16:38:966 AM +05:30
@@ -61,14 +61,14 @@ Caso você queira salvar o valor em uma variável, adicione um nome de variável
 {__time(yy-MM-dd-HH:mm:ss:SSS, cTime)}
 ```
 
-Use a variável <${cTime}> onde queira inserir o valor gerado.
+Use a variável `<${cTime}>` onde queira inserir o valor gerado.
 
-## Função <__timeShift()> no JMeter
+## Função `<__timeShift()>` no JMeter
 
-A função <__timeShift()> é usada para gerar a data passada ou futura durante o teste de desempenho. Possui cinco argumentos de entrada, entre eles 2 são opcionais.
+A função `<__timeShift()>` é usada para gerar a data passada ou futura durante o teste de desempenho. Possui cinco argumentos de entrada, entre eles 2 são opcionais.
 
-- **Time Format**: Consulte a tabela acima e use o argumento para criar a string de formato de hora. Por exemplo: <aa-MM-dd>;
-- **Date to Shift**: Por padrão, usa o timestamp atual. Caso você queira mudar a data/hora de uma data/hora específica, especifique-a. Por exemplo: <20-10-2020>;
+- **Time Format**: Consulte a tabela acima e use o argumento para criar a string de formato de hora. Por exemplo: `<aa-MM-dd>`;
+- **Date to Shift**: Por padrão, usa o timestamp atual. Caso você queira mudar a data/hora de uma data/hora específica, especifique-a. Por exemplo: `<20-10-2020>`;
 - **How much shift**: Especifique a quantidade de dia/hora para mudança:
    - **P** indica interpretação para uma data futura;
    - **-P** indica interpretação para uma data passada;
@@ -84,10 +84,10 @@ A função <__timeShift()> é usada para gerar a data passada ou futura durante 
 ![Figura 1: Função timeShift no JMeter](https://github.com/rafaelvie/faqperformance/blob/main/img/multipart-2.png?raw=true)
 
 - **Exemplos**:
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,P2D,,)}> gerará uma data futura adicionando 2 dias no dia atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2H,,)}> gerará um horário futuro adicionando 2 horas no horário atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2M,,)}> gerará um horário futuro adicionando 2 minutos no horário atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,P2DT2H,,)}> gerará uma data e hora futuras adicionando 2 dias e 2 horas na data/hora atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,-PT2M,,)}> gerará um tempo passado reduzindo 2 minutos no tempo atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,,-P2DT2H,,)}> gerará uma data e hora anteriores reduzindo 2 dias e 2 horas na data/hora atual;
-   - <${__timeShift(yyyy-MM-dd HH:mm:ss,2020-10-20,P2D,,)}> gerará <2020-10-22>, que é o próximo segundo dia a partir da data especificada.
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,P2D,,)}>` gerará uma data futura adicionando 2 dias no dia atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2H,,)}>` gerará um horário futuro adicionando 2 horas no horário atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,PT2M,,)}>` gerará um horário futuro adicionando 2 minutos no horário atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,P2DT2H,,)}>` gerará uma data e hora futuras adicionando 2 dias e 2 horas na data/hora atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,-PT2M,,)}>` gerará um tempo passado reduzindo 2 minutos no tempo atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,,-P2DT2H,,)}>` gerará uma data e hora anteriores reduzindo 2 dias e 2 horas na data/hora atual;
+   - `<${__timeShift(yyyy-MM-dd HH:mm:ss,2020-10-20,P2D,,)}>` gerará `<2020-10-22>`, que é o próximo segundo dia a partir da data especificada.
