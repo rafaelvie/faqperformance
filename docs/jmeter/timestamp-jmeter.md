@@ -42,7 +42,7 @@ Esta função é usada para gerar o timestamp atual em diferentes formatos, poss
 | `${__time(z)}` | IST | Fuso horário |
 | `${__time(Z)}` | +0530 | Deslocamento de fuso horário em horas (padrão RFC) |
 | `${__time(XXX)}` | +05:30 | Deslocamento de fuso horário no formato ISO |
-| `${__time(u)}` | 3 | Número do dia atual (1 – segunda, 2 – terça, 3 – quarta, 4 – quinta, 5 – sexta, 6 – sábado, 7 – domingo) |
+| `${__time(u)}` | 3 | Número do dia atual **(1 – segunda, 2 – terça, 3 – quarta, 4 – quinta, 5 – sexta, 6 – sábado, 7 – domingo)** |
 | `${__time(E)} / ${__time(EEEE)}` | Qua / Quarta-feira | Hora atual no formato de época em milissegundos |
 | `${__time(D)}` | 295 | Contagem de dias atuais no ano |
 | `${__time(W)}` | 4 | Semana em um mês (1 – Primeira semana, 2 – Segunda semana) |
