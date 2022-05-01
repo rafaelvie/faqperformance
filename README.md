@@ -10,7 +10,7 @@ nav_exclude: true
 <br><br>
 <p align="center">
     <h1 align="center">Wiki Performance</h1>
-    <p align="center">Projeto contendo sugestão de site em formato Wiki, moderno e atual, projetado com Jekyll.</p>
+    <p align="center">Projeto contendo sugestão de site em formato Wiki, moderno e atual, projetado com <strong>Jekyll.</strong></p>
     <p align="center"><strong><a href="https://rafaelvie.github.io/faqperformance">Acesse aqui!</a></strong></p>
     <br><br><br>
 </p>
