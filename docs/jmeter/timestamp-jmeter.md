@@ -68,7 +68,7 @@ Use a variável `<${cTime}>` onde queira inserir o valor gerado.
 A função `<__timeShift()>` é usada para gerar a data passada ou futura durante o teste de desempenho. Possui cinco argumentos de entrada, entre eles 2 são opcionais.
 
 - **Time Format**: Consulte a tabela acima e use o argumento para criar a string de formato de hora. Por exemplo: `<aa-MM-dd>`;
-- **Date to Shift**: Por padrão, usa o timestamp atual. Caso você queira mudar a data/hora de uma data/hora específica, especifique-a. Por exemplo: `<20-10-2020>`;
+- **Date to Shift**: Por padrão, usa o timestamp atual. Caso você queira mudar a data/hora de uma data/hora específica, basta defini-la. Por exemplo: `<20-10-2020>`;
 - **How much shift**: Especifique a quantidade de dia/hora para mudança:
    - **P** indica interpretação para uma data futura;
    - **-P** indica interpretação para uma data passada;
