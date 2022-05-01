@@ -1,5 +1,5 @@
 # Configurações gerais da página.
-# Nas tag abaixo, poderá ser configurado o título do site, uma descrição para SEO, sudpasta do site e URL principal.
+# Nas tags abaixo, poderá ser configurado o título do site, uma descrição para SEO, sudpasta do site e URL principal.
 title: Wiki Performance
 description: Repositório de documentação para a equipe de Performance da Caixa.
 baseurl: "/faqperformance"
